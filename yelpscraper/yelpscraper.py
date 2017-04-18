@@ -9,15 +9,18 @@ import time
 import random
 import argparse
 from bs4 import BeautifulSoup
-from utils.networker import  *
+#from utils.networker import *
 from collections import deque
 import os
 import pandas as pd
 import numpy as np
 
+
 def get_yelp(zipcode, page_num):
     """get yelp address for given zipcode and page number."""
-    return 'https://www.yelp.com/search?find_loc={}&start={}&cflt=restaurants'.format(zipcode, page_num)
+    return 'https://www.yelp.com/search?find_loc={}&start={}&cflt=restaurants'.format(
+        zipcode, page_num)
+
 
 def get_resturants(zipcode, page_num, tor=False):
     """get resturant names and web page."""
@@ -81,9 +84,10 @@ def get_attribute(address, tor=False):
     my_dict = {}
 
     try:
-        review_count = soup.find('span', {'itemprop': 'reviewCount'}).get_text()
+        review_count = soup.find('span',
+                                 {'itemprop': 'reviewCount'}).get_text()
         rating_value = soup.find('meta', {'itemprop':
-                                      'ratingValue'}).attrs['content']
+                                          'ratingValue'}).attrs['content']
     except:
         review_count = ''
         rating_value = ''
@@ -111,9 +115,12 @@ def get_attribute(address, tor=False):
 def get_zipcode():
     """read zipcodes from file."""
     with open('./data/zipcodes.csv', 'r+') as file:
-        zipcodes = [int(zipcode.strip()) for zipcode in file.read().split('\n')
-                    if zipcode.strip()]
+        zipcodes = [
+            int(zipcode.strip()) for zipcode in file.read().split('\n')
+            if zipcode.strip()
+        ]
     return zipcodes
+
 
 def get_scraped_biz(zipcode):
     "get the biz_id and resturant names that are already scrape"
@@ -121,8 +128,10 @@ def get_scraped_biz(zipcode):
         files = os.listdir('./data/')
     except:
         print('No scraped resturants')
-        return [],[]
-    attr_files = [file for file in files if str(zipcode)+'_attributes' in file]
+        return [], []
+    attr_files = [
+        file for file in files if str(zipcode) + '_attributes' in file
+    ]
     biz_id = np.array([])
     biz_name = np.array([])
     for file in attr_files:
@@ -135,7 +144,8 @@ def get_scraped_biz(zipcode):
     biz_id = [id.lstrip() for id in biz_id]
     return biz_name, biz_id
 
-def crawl(zipcodes=None, tor=False, sleep_time=10):
+
+def crawl(zipcodes=None, tor=False, sleep_time=10, start_page=0):
     """crawl through li.st of zipcodes."""
     if tor:
         ip_address = get_current_ip()
@@ -144,25 +154,23 @@ def crawl(zipcodes=None, tor=False, sleep_time=10):
         used_ips.append(get_current_ip())
     else:
         ip_address = urlopen('https://icanhazip.com/').read().replace('\n', '')
-    page = 0
     request_count = 0
     flag = True
     header_flag = True
     zipcodes = [zipcodes] if zipcodes else get_zipcode()
     for zipcode in zipcodes:
-        page = 0
+        page = start_page
         request_count = 0
         flag = True
         out_of_zipcode_resturant = 0
         biz_names, biz_ids = get_scraped_biz(zipcode)
-        if page:
-            answer = raw_input('Next zipcode? (y/n)')
-            if answer == 'y':
-                pass
-            elif answer == 'n':
-                break
-            else:
-                break
+        answer = raw_input('Next zipcode? (y/n)')
+        if answer == 'y':
+            pass
+        elif answer == 'n':
+            break
+        else:
+            break
         while flag:
             if page > 500:
                 break
@@ -178,7 +186,8 @@ def crawl(zipcodes=None, tor=False, sleep_time=10):
                     request_count = 0
                     print('reached 50 requests, change ip address')
                 if request_count % 50 == 0 and not tor:
-                    print('reached 50 request, going to sleep {} minutes'.format(sleep_time))
+                    print('reached 50 request, going to sleep {} minutes'.
+                          format(sleep_time))
                     time.sleep(60 * sleep_time)
                     request_count = 0
                 request_count += 1
@@ -188,14 +197,16 @@ def crawl(zipcodes=None, tor=False, sleep_time=10):
                     continue
                 request_count += 1
                 attr_dict = get_attribute(resturants[resturant], tor)
-                if attr_dict['zipcode'] and int(attr_dict['zipcode']) != zipcode:
+                if attr_dict['zipcode'] and int(
+                        attr_dict['zipcode']) != zipcode:
                     out_of_zipcode_resturant += 1
                     continue
-                print('scraping returant:' + resturant +
-                        ', at zipcode:' + attr_dict['zipcode'] +
-                        ', current IP address:' + ip_address)
+                print('scraping returant:' + resturant + ', at zipcode:' +
+                      attr_dict[
+                          'zipcode'] + ', current IP address:' + ip_address)
                 biz_ids.append(biz_id)
-                with open('./data/' + str(zipcode) +'_attributes.csv', 'a') as file:
+                with open('./data/' + str(zipcode) + '_attributes.csv',
+                          'a') as file:
                     if header_flag:
                         file.write(','.join(list(attr_dict.keys())) + '\n')
                         header_flag = False
@@ -216,7 +227,8 @@ def crawl(zipcodes=None, tor=False, sleep_time=10):
                         words = ','.join(words)
                     except:
                         print('skipped ' + resturant)
-                    with open('./data/' + str(zipcode) +'_reviews.csv', 'a') as file:
+                    with open('./data/' + str(zipcode) + '_reviews.csv',
+                              'a') as file:
                         file.write(words)
 
             page += 10
@@ -235,9 +247,10 @@ if __name__ == '__main__':
         type=int,
         help='Enter a zip code \
     you\'t like to extract from.')
-    parser.add_argument('-t',
-                        '--tor',
-                        action='store_true',
-                        help='use tor to change ip address')
+    parser.add_argument(
+        '-t',
+        '--tor',
+        action='store_true',
+        help='use tor to change ip address')
     args = parser.parse_args()
     crawl(zipcodes=args.zipcode, tor=args.tor, sleep_time=10)
