@@ -116,7 +116,7 @@ def get_zipcode():
     """read zipcodes from file."""
     with open('./data/zipcodes.csv', 'r+') as file:
         zipcodes = [
-            int(zipcode.strip()) for zipcode in file.read().split('\n')
+            (zipcode.strip()) for zipcode in file.read().split('\n')
             if zipcode.strip()
         ]
     return zipcodes
@@ -177,6 +177,7 @@ def crawl(zipcodes=None, tor=False, sleep_time=10, start_page=0):
             request_count += 1
             print('page {}, at zipcode {}'.format(page, zipcode))
             resturants, flag = get_resturants(zipcode, page, tor)
+           # import pdb; pdb.set_trace()
             for resturant in resturants:
                 if resturant in biz_names:
                     print('repeated biz_name: ', resturant)
@@ -197,8 +198,8 @@ def crawl(zipcodes=None, tor=False, sleep_time=10, start_page=0):
                     continue
                 request_count += 1
                 attr_dict = get_attribute(resturants[resturant], tor)
-                if attr_dict['zipcode'] and int(
-                        attr_dict['zipcode']) != zipcode:
+                if attr_dict['zipcode'] and \
+                        attr_dict['zipcode'] != zipcode:
                     out_of_zipcode_resturant += 1
                     continue
                 print('scraping returant:' + resturant + ', at zipcode:' +

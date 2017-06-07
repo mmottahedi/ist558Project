@@ -1,0 +1,1048 @@
+K best features with k = 2
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.33      0.89      0.49       385
+        2.0       0.46      0.18      0.26       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.58      0.25      0.35       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.26      0.35      0.25      1176
+
+criterion='entropy',
+max_depth=2,
+max_leaf_nodes=5,
+min_samples_leaf=10,
+min_samples_split=2,
+K best features with k = 3
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.94      0.50       385
+        2.0       0.48      0.14      0.22       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.66      0.24      0.35       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.28      0.36      0.24      1176
+
+criterion='entropy',
+max_depth=5,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=2,
+K best features with k = 4
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.93      0.50       385
+        2.0       0.49      0.18      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.60      0.25      0.36       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.28      0.37      0.26      1176
+
+criterion='entropy',
+max_depth=5,
+max_leaf_nodes=20,
+min_samples_leaf=10,
+min_samples_split=20,
+K best features with k = 5
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.96      0.51       385
+        2.0       0.59      0.15      0.24       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.63      0.25      0.36       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.30      0.37      0.25      1176
+
+criterion='entropy',
+max_depth=None,
+max_leaf_nodes=10,
+min_samples_leaf=5,
+min_samples_split=2,
+K best features with k = 6
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.95      0.50       385
+        2.0       0.59      0.16      0.25       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.65      0.21      0.32       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.30      0.37      0.25      1176
+
+criterion='gini',
+max_depth=5,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 7
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.97      0.50       385
+        2.0       0.64      0.14      0.23       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.71      0.19      0.31       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.37      0.24      1176
+
+criterion='gini',
+max_depth=5,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 8
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.94      0.50       385
+        2.0       0.55      0.16      0.25       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.72      0.22      0.34       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.30      0.36      0.25      1176
+
+criterion='gini',
+max_depth=5,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 9
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.95      0.50       385
+        2.0       0.55      0.16      0.25       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.62      0.22      0.33       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.29      0.37      0.25      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=1,
+min_samples_split=2,
+K best features with k = 10
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.95      0.51       385
+        2.0       0.57      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.65      0.23      0.34       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.30      0.37      0.26      1176
+
+criterion='gini',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=10,
+min_samples_split=2,
+K best features with k = 11
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.96      0.51       385
+        2.0       0.63      0.15      0.25       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.66      0.22      0.33       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.31      0.37      0.25      1176
+
+criterion='entropy',
+max_depth=5,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=2,
+K best features with k = 12
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.96      0.51       385
+        2.0       0.53      0.17      0.26       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.62      0.23      0.34       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.29      0.37      0.26      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=20,
+K best features with k = 13
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.97      0.51       385
+        2.0       0.64      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.70      0.18      0.29       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.37      0.26      1176
+
+criterion='gini',
+max_depth=5,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=2,
+K best features with k = 14
+             precision    recall  f1-score   support
+
+        0.0       0.26      0.03      0.05       193
+        1.0       0.35      0.93      0.51       385
+        2.0       0.54      0.19      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.67      0.21      0.32       103
+        5.0       0.00      0.00      0.00        81
+        6.0       1.00      0.01      0.02       122
+
+avg / total       0.44      0.37      0.27      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 15
+             precision    recall  f1-score   support
+
+        0.0       0.24      0.05      0.08       193
+        1.0       0.35      0.91      0.51       385
+        2.0       0.46      0.19      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.65      0.23      0.34       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.37      0.27      1176
+
+criterion='entropy',
+max_depth=None,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 16
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.96      0.50       385
+        2.0       0.68      0.16      0.26       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.75      0.17      0.28       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.33      0.37      0.25      1176
+
+criterion='entropy',
+max_depth=5,
+max_leaf_nodes=None,
+min_samples_leaf=1,
+min_samples_split=10,
+K best features with k = 17
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.97      0.51       385
+        2.0       0.62      0.17      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.62      0.20      0.31       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.31      0.37      0.26      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 18
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.01      0.01       193
+        1.0       0.35      0.96      0.51       385
+        2.0       0.65      0.19      0.30       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.64      0.20      0.31       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.48      0.38      0.26      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 19
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.97      0.51       385
+        2.0       0.62      0.16      0.25       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.67      0.19      0.30       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.31      0.37      0.25      1176
+
+criterion='entropy',
+max_depth=5,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=20,
+K best features with k = 20
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.01      0.01       193
+        1.0       0.33      0.95      0.50       385
+        2.0       0.61      0.18      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       1.00      0.01      0.02       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.42      0.35      0.23      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=2,
+K best features with k = 21
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.95      0.51       385
+        2.0       0.57      0.18      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.64      0.24      0.35       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.30      0.37      0.26      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 22
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.96      0.51       385
+        2.0       0.66      0.19      0.29       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.64      0.20      0.31       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.37      0.26      1176
+
+criterion='entropy',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=1,
+min_samples_split=10,
+K best features with k = 23
+             precision    recall  f1-score   support
+
+        0.0       0.29      0.02      0.04       193
+        1.0       0.35      0.96      0.52       385
+        2.0       0.58      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.66      0.22      0.33       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.35      0.38      0.27      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 24
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.01      0.01       193
+        1.0       0.34      0.95      0.50       385
+        2.0       0.58      0.18      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.75      0.03      0.06       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.47      0.36      0.23      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=10,
+min_samples_split=2,
+K best features with k = 25
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.96      0.50       385
+        2.0       0.63      0.15      0.25       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.74      0.17      0.27       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.36      0.24      1176
+
+criterion='entropy',
+max_depth=5,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 26
+             precision    recall  f1-score   support
+
+        0.0       0.17      0.02      0.03       193
+        1.0       0.35      0.94      0.51       385
+        2.0       0.58      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.67      0.23      0.35       103
+        5.0       0.75      0.04      0.07        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.38      0.37      0.27      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=20,
+K best features with k = 27
+             precision    recall  f1-score   support
+
+        0.0       0.40      0.01      0.02       193
+        1.0       0.34      0.95      0.50       385
+        2.0       0.60      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.76      0.18      0.30       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.38      0.37      0.26      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 28
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.01      0.01       193
+        1.0       0.35      0.96      0.51       385
+        2.0       0.63      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.70      0.20      0.32       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.48      0.38      0.26      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 29
+             precision    recall  f1-score   support
+
+        0.0       0.20      0.03      0.05       193
+        1.0       0.35      0.91      0.51       385
+        2.0       0.53      0.21      0.30       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.71      0.19      0.31       103
+        5.0       1.00      0.01      0.02        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.40      0.37      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 30
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.97      0.51       385
+        2.0       0.61      0.18      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.70      0.18      0.29       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.31      0.37      0.25      1176
+
+criterion='entropy',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=20,
+K best features with k = 31
+             precision    recall  f1-score   support
+
+        0.0       0.19      0.02      0.03       193
+        1.0       0.35      0.95      0.51       385
+        2.0       0.54      0.18      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.68      0.20      0.31       103
+        5.0       0.00      0.00      0.00        81
+        6.0       1.00      0.01      0.02       122
+
+avg / total       0.43      0.37      0.26      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 32
+             precision    recall  f1-score   support
+
+        0.0       0.23      0.03      0.05       193
+        1.0       0.35      0.92      0.51       385
+        2.0       0.53      0.22      0.31       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.63      0.18      0.29       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.50      0.01      0.02       122
+
+avg / total       0.38      0.37      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 33
+             precision    recall  f1-score   support
+
+        0.0       0.28      0.04      0.06       193
+        1.0       0.35      0.93      0.51       385
+        2.0       0.51      0.21      0.30       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.77      0.19      0.31       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.35      0.38      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=1,
+min_samples_split=20,
+K best features with k = 34
+             precision    recall  f1-score   support
+
+        0.0       0.23      0.04      0.06       193
+        1.0       0.35      0.92      0.51       385
+        2.0       0.48      0.19      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.65      0.17      0.26       103
+        5.0       0.00      0.00      0.00        81
+        6.0       1.00      0.01      0.02       122
+
+avg / total       0.42      0.37      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=1,
+min_samples_split=2,
+K best features with k = 35
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.97      0.51       385
+        2.0       0.62      0.18      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.70      0.07      0.12       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.31      0.36      0.24      1176
+
+criterion='gini',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=2,
+K best features with k = 36
+             precision    recall  f1-score   support
+
+        0.0       0.30      0.03      0.06       193
+        1.0       0.35      0.93      0.51       385
+        2.0       0.52      0.20      0.29       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.73      0.18      0.29       103
+        5.0       0.00      0.00      0.00        81
+        6.0       1.00      0.02      0.05       122
+
+avg / total       0.45      0.37      0.27      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 37
+             precision    recall  f1-score   support
+
+        0.0       0.13      0.02      0.04       193
+        1.0       0.35      0.93      0.51       385
+        2.0       0.53      0.20      0.29       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.69      0.19      0.30       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.50      0.01      0.02       122
+
+avg / total       0.37      0.37      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 38
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.01      0.01       193
+        1.0       0.35      0.97      0.51       385
+        2.0       0.65      0.19      0.29       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.63      0.21      0.32       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.48      0.38      0.26      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=20,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 39
+             precision    recall  f1-score   support
+
+        0.0       0.13      0.07      0.09       193
+        1.0       0.37      0.84      0.51       385
+        2.0       0.47      0.29      0.36       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.68      0.17      0.27       103
+        5.0       0.42      0.06      0.11        81
+        6.0       0.25      0.02      0.03       122
+
+avg / total       0.36      0.37      0.30      1176
+
+criterion='gini',
+max_depth=None,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=2,
+K best features with k = 40
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.95      0.51       385
+        2.0       0.59      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.65      0.23      0.34       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.30      0.37      0.26      1176
+
+criterion='entropy',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=2,
+K best features with k = 41
+             precision    recall  f1-score   support
+
+        0.0       0.33      0.01      0.01       193
+        1.0       0.34      0.94      0.50       385
+        2.0       0.55      0.18      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.59      0.16      0.25       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.34      0.36      0.25      1176
+
+criterion='gini',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 42
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.95      0.50       385
+        2.0       0.58      0.20      0.30       267
+        3.0       0.00      0.00      0.00        25
+        4.0       1.00      0.11      0.19       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.33      0.37      0.25      1176
+
+criterion='gini',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=2,
+K best features with k = 43
+             precision    recall  f1-score   support
+
+        0.0       0.22      0.03      0.05       193
+        1.0       0.35      0.94      0.51       385
+        2.0       0.52      0.20      0.29       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.70      0.18      0.29       103
+        5.0       0.00      0.00      0.00        81
+        6.0       1.00      0.01      0.02       122
+
+avg / total       0.44      0.37      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=1,
+min_samples_split=10,
+K best features with k = 44
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.97      0.51       385
+        2.0       0.61      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.78      0.14      0.23       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.37      0.25      1176
+
+criterion='gini',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=1,
+min_samples_split=10,
+K best features with k = 45
+             precision    recall  f1-score   support
+
+        0.0       0.25      0.03      0.05       193
+        1.0       0.35      0.95      0.51       385
+        2.0       0.58      0.22      0.32       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.65      0.15      0.24       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.35      0.38      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 46
+             precision    recall  f1-score   support
+
+        0.0       0.14      0.02      0.04       193
+        1.0       0.35      0.93      0.51       385
+        2.0       0.55      0.19      0.29       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.71      0.15      0.24       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.36      0.26      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 47
+             precision    recall  f1-score   support
+
+        0.0       0.26      0.03      0.05       193
+        1.0       0.35      0.94      0.51       385
+        2.0       0.64      0.20      0.31       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.66      0.20      0.31       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.36      0.38      0.27      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=1,
+min_samples_split=20,
+K best features with k = 48
+             precision    recall  f1-score   support
+
+        0.0       0.50      0.02      0.04       193
+        1.0       0.35      0.95      0.51       385
+        2.0       0.54      0.20      0.29       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.76      0.18      0.30       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.39      0.38      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=2,
+K best features with k = 49
+             precision    recall  f1-score   support
+
+        0.0       0.19      0.02      0.04       193
+        1.0       0.35      0.93      0.51       385
+        2.0       0.57      0.24      0.33       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.76      0.21      0.33       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.34      0.38      0.28      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 50
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.35      0.96      0.51       385
+        2.0       0.64      0.17      0.27       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.65      0.21      0.32       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.37      0.26      1176
+
+criterion='gini',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 51
+             precision    recall  f1-score   support
+
+        0.0       0.24      0.11      0.15       193
+        1.0       0.36      0.88      0.51       385
+        2.0       0.55      0.23      0.32       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.59      0.17      0.26       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.33      0.37      0.29      1176
+
+criterion='entropy',
+max_depth=None,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=20,
+K best features with k = 52
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00       193
+        1.0       0.34      0.96      0.50       385
+        2.0       0.61      0.17      0.26       267
+        3.0       0.00      0.00      0.00        25
+        4.0       1.00      0.08      0.14       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.34      0.36      0.24      1176
+
+criterion='gini',
+max_depth=None,
+max_leaf_nodes=20,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 53
+             precision    recall  f1-score   support
+
+        0.0       0.14      0.02      0.04       193
+        1.0       0.35      0.94      0.51       385
+        2.0       0.56      0.20      0.30       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.68      0.18      0.29       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.33      0.37      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=1,
+min_samples_split=20,
+K best features with k = 54
+             precision    recall  f1-score   support
+
+        0.0       0.13      0.03      0.04       193
+        1.0       0.35      0.94      0.51       385
+        2.0       0.62      0.18      0.28       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.67      0.16      0.25       103
+        5.0       1.00      0.01      0.02        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.41      0.37      0.26      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 55
+             precision    recall  f1-score   support
+
+        0.0       0.18      0.03      0.05       193
+        1.0       0.35      0.92      0.51       385
+        2.0       0.55      0.22      0.31       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.73      0.18      0.29       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.33      0.37      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=1,
+min_samples_split=10,
+K best features with k = 56
+             precision    recall  f1-score   support
+
+        0.0       0.22      0.03      0.05       193
+        1.0       0.35      0.94      0.51       385
+        2.0       0.57      0.21      0.30       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.74      0.17      0.27       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.35      0.37      0.27      1176
+
+criterion='entropy',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=5,
+min_samples_split=10,
+K best features with k = 57
+             precision    recall  f1-score   support
+
+        0.0       0.08      0.01      0.02       193
+        1.0       0.35      0.93      0.51       385
+        2.0       0.52      0.21      0.30       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.83      0.19      0.31       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.32      0.37      0.27      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+K best features with k = 58
+             precision    recall  f1-score   support
+
+        0.0       0.14      0.02      0.04       193
+        1.0       0.35      0.93      0.51       385
+        2.0       0.56      0.24      0.34       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.76      0.18      0.30       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.33      0.38      0.28      1176
+
+criterion='gini',
+max_depth=10,
+max_leaf_nodes=None,
+min_samples_leaf=1,
+min_samples_split=20,
+K best features with k = 59
+             precision    recall  f1-score   support
+
+        0.0       0.20      0.04      0.07       193
+        1.0       0.36      0.93      0.52       385
+        2.0       0.58      0.22      0.32       267
+        3.0       0.00      0.00      0.00        25
+        4.0       0.69      0.19      0.30       103
+        5.0       0.00      0.00      0.00        81
+        6.0       0.00      0.00      0.00       122
+
+avg / total       0.34      0.38      0.28      1176
+
+criterion='entropy',
+max_depth=None,
+max_leaf_nodes=None,
+min_samples_leaf=10,
+min_samples_split=10,
+
+Decision Tree  (Best k features):
+
+Decision Tree total time:5435.378s
